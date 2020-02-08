@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/navigation_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            >
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lin_favourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp"
+            >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/favourites_icon"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Favourites "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_below="@+id/lin_favourites"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/bookmark_icon"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Bookmarks "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_below="@+id/lin_bookmark"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/feedback_icon"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Send feedback "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_rateApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_below="@+id/lin_feedback"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/favourites_icon"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Rate the App "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_below="@+id/lin_rateApp"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/policy_icon"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="SportsApp policies "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_below="@+id/lin_policy"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/settings_icon"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Settings "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

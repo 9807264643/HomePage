@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EDED"
+    android:orientation="vertical"
+    tools:context=".detailPageActivity.DetailPageActivities">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EDED"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/back_icon" />
+
+            <ImageView
+                android:id="@+id/bookmark_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/bookmark_white" />
+
+            <ImageView
+                android:id="@+id/bookmark_iconblack"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/bookmark_black"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#F0EDED">
+
+
+            <ImageView
+                android:id="@+id/detail_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/img1" />
+
+            <TextView
+                android:id="@+id/subj_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_img"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="We Are Hiring Urgent Requirements Hurry Up"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#867F7F"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/subj_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subj_heading"
+                android:layout_margin="4dp"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="4dp"
+                android:text="@string/description"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="#F0EDED"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/user"
+                    app:civ_border_color="#050505"
+                    app:civ_border_width="2dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#171718" />
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/img_profile"
+                    android:text="THE KING"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_title"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/img_profile"
+                    android:text="f@jfhdjfndivdjvksksjbc"
+                    android:textColor="#747171"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/tiwitter"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/tiwiter" />
+
+                <TextView
+                    android:id="@+id/txt_imgurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_profile"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="f@jfhdjfndivdjvksksjbc"
+                    android:textColor="#747171"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:id="@+id/info_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/txt_imgurl"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/img7" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/info_img"
+                    android:layout_margin="5dp"
+                    android:background="#F0EDED"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/heart_img"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/heart_icon" />
+
+                        <TextView
+                            android:id="@+id/txt_heart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toEndOf="@+id/heart_img"
+                            android:text="20.000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#706E6E"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/heart_img1"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/heart_icon" />
+
+                        <TextView
+                            android:id="@+id/txt_heart1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/heart_img1"
+                            android:text="20.000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#706E6E"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_dateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:padding="4dp"
+                        android:text="9:15, feb 2, 2020 "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#706E6E"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Read More :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="ujgdhisfk jshcidjvndkvjdkcs kdvhdvbggchbjghbkghv"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#42A747"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/subj_description1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subj_heading"
+            android:layout_margin="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="4dp"
+            android:text="@string/description"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/txt_similarNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Similar News  "
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp" />
+
+        <!--use recylerview for similar item-->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#F0EDED"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/img4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="jdiedfjvndvj"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
